@@ -1,0 +1,34 @@
+.worm {
+    background-color: rgb(120, 39, 129);
+    border: .25vmin solid white;
+
+
+}
+
+.food {
+background-color: brown;
+border: .25vmin solid white;
+
+}
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    margin: 0;
+}
+
+#board {
+    border: 2px solid;
+    width: 100vmin;
+    height: 100vmin;
+   
+
+}
+
