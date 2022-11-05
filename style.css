@@ -1,5 +1,5 @@
 .worm {
-    background-color: rgb(120, 39, 129);
+    background-color: rgb(255, 248, 44);
     border: .25vmin solid white;
 
 
@@ -15,7 +15,7 @@ border: .25vmin solid white;
 
 body {
     background-color: black;
-    color: white;
+    color: rgb(26, 182, 36);
     font-family: monospace;
     text-align: center;
     min-height: 100vh;
@@ -28,6 +28,9 @@ body {
     border: 2px solid;
     width: 100vmin;
     height: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(20 ,1fr);
+    grid-template-rows:repeat(20 ,1fr);
    
 
 }
