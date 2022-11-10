@@ -1,4 +1,10 @@
-.worm {
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+}
+
+.snake {
     background-color: rgb(255, 248, 44);
     border: .25vmin solid white;
 
@@ -6,13 +12,13 @@
 }
 
 .food {
-background-color: brown;
-border: .25vmin solid white;
+    background-color: brown;
+    border: .25vmin solid white;
 
 }
-
-
-
+.head{
+    background-color: aquamarine;
+}
 body {
     background-color: black;
     color: rgb(26, 182, 36);
@@ -26,12 +32,15 @@ body {
 
 #board {
     border: 2px solid;
-    width: 100vmin;
-    height: 100vmin;
+    width: 90vmin;
+    height: 92vmin;
     display: grid;
-    grid-template-columns: repeat(20 ,1fr);
-    grid-template-rows:repeat(20 ,1fr);
-   
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+
 
 }
 
+.highScore {
+    color: white;
+}
