@@ -2,10 +2,11 @@
     box-sizing: border-box;
     outline: 0;
     margin: 0;
+     font-family: monospace;
 }
 
 .snake {
-    background-color: rgb(255, 248, 44);
+    background-color: rgb(70, 245, 93);
     border: .25vmin solid white;
 
 
@@ -20,20 +21,24 @@
     background-color: aquamarine;
 }
 body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: black;
-    color: rgb(26, 182, 36);
+    color: #9370DB;
     font-family: monospace;
     text-align: center;
     min-height: 100vh;
     min-width: 100vw;
-
     margin: 0;
 }
 
 #board {
     border: 2px solid;
-    width: 90vmin;
-    height: 92vmin;
+    width: 50vmax;
+    height: 50vmax;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(18, 1fr);
@@ -43,4 +48,25 @@ body {
 
 .highScore {
     color: white;
+}
+
+button {
+    display: inline-block;
+        padding: 0.3em 1.2em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgba(255, 255, 255, 0);
+        border-radius: 2em;
+        box-sizing: border-box;
+        text-decoration: none;
+      
+        font-weight: 300;
+        color: #9370DB;
+        text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        text-align: center;
+        transition: all 0.2s;
+        margin: 2% ;
+}
+
+select {
+    margin: 1%;
 }

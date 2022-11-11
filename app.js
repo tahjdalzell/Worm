@@ -5,7 +5,8 @@ let lastDrawTime = 0;
 let snakeArray = [{ x: 5, y: 15 }];
 let food = { x: 14, y: 7 };
 let score = 0;
-let resetEl = document.querySelector('.restart')
+let playEl = document.querySelector("#playGame");
+let modes = document.querySelector("#modes");
 
 // | MAIN LOOP |
 
@@ -38,6 +39,7 @@ function isCollide(snake) {
   }
 }
 //{gameEngine}
+
 function gameEngine() {
   //update the snake + food arrays
   if (isCollide(snakeArray)) {
@@ -120,5 +122,23 @@ window.addEventListener("keydown", (e) => {
       inputDir.x = 1;
       inputDir.y = 0;
       break;
+  }
+});
+
+playEl.addEventListener("click", () => {
+  console.log(modes.value);
+  inputDir = { x: 0, y: -1 };
+  score = 0;
+  if (modes.value === "HARD") {
+    speed = 20;
+    console.log(speed);
+  }
+  if (modes.value === "MEDIUM") {
+    speed = 15;
+    console.log(speed);
+  }
+  if (modes.value === "EASY") {
+    speed = 10;
+    console.log(speed);
   }
 });
