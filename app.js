@@ -5,6 +5,7 @@ let lastDrawTime = 0;
 let snakeArray = [{ x: 5, y: 15 }];
 let food = { x: 14, y: 7 };
 let score = 0;
+let resetEl = document.querySelector('.restart')
 
 // | MAIN LOOP |
 
@@ -95,7 +96,7 @@ function gameEngine() {
 
 window.requestAnimationFrame(main);
 
-//game inputs
+//game inputs || controls
 window.addEventListener("keydown", (e) => {
   inputDir = { x: 0, y: 1 }; //game begin
   switch (e.key) {
